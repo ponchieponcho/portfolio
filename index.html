@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>aaron gross</title>
+    <link rel="stylesheet" type="text/css" href="styles/mystyle.css">
+    <script src="jquery-3.3.1.min.js"></script>
+
+</head>
+<body>
+    <div class="top-nav">
+        <ul class="ul-nav">
+        <li class="li-nav"><div class="top-nav-name">aaron gross</div></li>
+        <li class="li-nav"><div class="top-nav-links">
+            <ul class="ul-nav">
+            <li class="li-nav"><a href="#about">about</a></li>
+            <li class="li-nav"><a href="#portfolio">portfolio</a></li>
+            <li class="li-nav"><a href="#experience">experience</a></li>
+            <li class="li-nav"><a href="#contact">contact</a></li>
+            </ul>
+        </div>
+    </div></ul>
+
+    
+    <main>
+    <div class="section" id="about">
+        <h2>About</h2>
+            <p>
+                MY Spectre around me night and day
+                Like a wild beast guards my way;
+                My Emanation far within
+                Weeps incessantly for my sin.
+            </p>
+    </div>
+    <div id="portfolio">
+        <h2>Portfolio</h2>
+            <p>
+                MY Spectre around me night and day
+                Like a wild beast guards my way;
+                My Emanation far within
+                Weeps incessantly for my sin.
+            </p>
+    </div>
+    <div id="experience">
+        <h2>Experience</h2>
+            <p>
+                MY Spectre around me night and day
+                Like a wild beast guards my way;
+                My Emanation far within
+                Weeps incessantly for my sin.
+            </p>
+    </div>
+    <div id="contact">
+        <h2>Contact</h2>
+            <p>
+                MY Spectre around me night and day
+                Like a wild beast guards my way;
+                My Emanation far within
+                Weeps incessantly for my sin.
+            </p>
+    </div>
+    </main>
+    <div class="transform-grid">
+        <div class="repeating-grid">
+        </div>
+    </div>
+     <!-- The JavaScript -->
+     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
+     <script type="text/javascript" src="jquery.easing.1.3.js"></script>
+     <script type="text/javascript">
+         $(function() {
+             $('ul.nav a').bind('click',function(event){
+                 var $anchor = $(this);
+                 /*
+                 if you want to use one of the easing effects:
+                 $('html, body').stop().animate({
+                     scrollLeft: $($anchor.attr('href')).offset().left
+                 }, 1500,'easeInOutExpo');
+                  */
+                 $('html, body').stop().animate({
+                     scrollLeft: $($anchor.attr('href')).offset().left
+                 }, 1000);
+                 event.preventDefault();
+             });
+         });
+     </script>
+</body>
+</html>
