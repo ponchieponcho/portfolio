@@ -1,26 +1,31 @@
 <html lang="en">
+
 <head>
     <title>aaron gross</title>
     <style type="text/css">
         * {
             box-sizing: border-box;
         }
-        
+
         html, body {
-          width: 100%;
-          height: 100%;
-          margin: 0;
-          padding: 0;
-          color: white;  
-    
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            color: white;
         }
-        
+
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+
         li {
             list-style: none;
             margin: 0;
             padding: 0;
         }
-        
+
         a {
             text-decoration: none;
             color: white;
@@ -31,253 +36,30 @@
         a:hover {
             color: purple;
         }
-        .nav-menu-ul {
-            display: flex;
-            list-style: none;
-            color: white;
-            font-family: "Futura";
-            flex-direction: row;
-            color: white;
-            margin: 0;
-            padding: 0;
-            justify-content: center;
-            flex-basis: auto;
-
-        }
-
-        .nav-menu-li {
-            padding: 5px;
-            display: flex;
-            justify-content: space-around;
-
-        }
-
-        .nav-menu {
-            display: flex;
-            flex-direction: column;
-            align-content: center;
-            flex-basis: auto;
-            margin-top: 12.5px;
-            flex-shrink: 0;
-        }
-
-        .nav-name {
-            color: white;
-            font-family: "Futura";
-            flex-basis: auto;
-            display: flex;
-            justify-content: center;
-            flex-shrink: 0;
-        }
-
-        body {
-            display:flex;
-            background-color:black;
-            flex-direction: column;
-            max-height: 100vh;
-        }
 
         .nav {
-            min-height: 50px;
-            max-height: 50px;
-            max-width: 100%;
-            display: flex;
-            
+            background-color: purple;
+            width: 100vw;
+            height: 100px;
         }
 
         .content {
-            display: flex;
-            wrap: nowrap;
-            overflow-y: hidden;
-            overflow-x: hidden;
-            max-height: 100vh;
-        }
-
-        .section {
-            flex: 0 0 auto;
-            height: 100%;
+            background: blue;
             width: 100vw;
-        }
-
-        #one {
-            /* background-color: sandybrown; */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        #two {
-            /* background-color: chartreuse; */
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-
-        }
-        #three {
-            /* background-color: brown; */
-        }
-        #four {
-            /* background-color: grey; */
-        }
-
-        .background-1 {
-            background-color: purple;
-            flex: 1;
-
-        }
-        .background-2 {
-            background-color: powderblue;
-            flex: 1;
-
-        }
-        .background-3 {
-            background-color: pink;
-            flex: 1;
-
-        }
-        .background-4 {
-            background-color: palegreen;
-            flex: 1;
-
-        }
-        
-        .background {
-            position: relative;
-            background-color: navajowhite;
-            /* height: 100%; */
-            margin: 0;
-            padding: 0;
-            
-        }
-        .background.bg1 {
-            background:
-            repeating-linear-gradient(0deg, rgba(102,22,224,0.44), rgba(102,22,224,0.44) 2px, transparent 6px, transparent 120px),
-            repeating-linear-gradient(90deg, rgba(102,22,224,0.44), rgba(102,22,224,0.44) 2px, transparent 2px, transparent 60px);
-        }
-        .background.bg2 {
-            background:
-            repeating-linear-gradient(0deg, rgba(102,22,224,0.44), rgba(102,22,224,0.44) 2px, transparent 6px, transparent 120px),
-            repeating-linear-gradient(90deg, rgba(102,22,224,0.44), rgba(102,22,224,0.44) 2px, transparent 2px, transparent 60px);
-        }
-        .background.bg3 {
-            background:
-            repeating-linear-gradient(0deg, rgba(102,22,224,0.44), rgba(102,22,224,0.44) 2px, transparent 6px, transparent 120px),
-            repeating-linear-gradient(90deg, rgba(102,22,224,0.44), rgba(102,22,224,0.44) 2px, transparent 2px, transparent 60px);
-        }
-        .background.bg4 {
-            background:
-            repeating-linear-gradient(0deg, rgba(102,22,224,0.44), rgba(102,22,224,0.44) 2px, transparent 6px, transparent 120px),
-            repeating-linear-gradient(90deg, rgba(102,22,224,0.44), rgba(102,22,224,0.44) 2px, transparent 2px, transparent 60px);
-        }
-
-        span {
-            font-size: 25px;
-            margin-top: 0px;
-            padding: 10px;
-        }
-        .content-container {
-            display: flex;
-        }
-        
-        .content-container.about {
-            flex-direction: row;
-            margin-left: 20px;
-            margin-right:20px;
-            flex-grow: 0;
-        }
-        
-
-        .about-picture {
-            width: 200px;
-            height: 200px;
-            justify-content: center;
-        }
-
-        .content-container.portfolio {
-            flex-direction: row;
-            flex-wrap: wrap;
-            
-            
-
-        }
-
-        .placeholder-box1 {
-            background: #ccc;
-            border: 1px solid red;
-            width: 300px;
-            height: 300px;
-            margin: 10px;
+            height: 100vh;
         }
     </style>
 </head>
 
 <body>
-    <div class="nav">
-        <div class="nav-name"><span>aaron gross</span></div>
-        <div class="nav-menu">
-            <ul class="nav-menu-ul">
-            <li class="nav-menu-li"><a href="#one">about</li></a>
-            <li class="nav-menu-li"><a href="#two">portfolio</li></a>
-            <li class="nav-menu-li"><a href="#three">experience</li></a>
-            <li class="nav-menu-li"><a href="#four">contact</li></a>
-            </ul>
-        </div>
-    </div>
-   
-    <div class="content">
-        <div id="one" class="section">
-            <a href="#four"></a>
-            <div class="content-container about">
-                <div><img src="images/me.jpg" class="about-picture"></div>
-                <div class="about-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
-            </div>
-            <div class="background bg1"></div>   
-        </div>
+   <header class="nav"></header>
+   <div class="content">
 
-        <div id="two" class="section">
-            <a href="#one"></a>
-            <div class="content-container portfolio">
-                <div class="line-one">
-             <div class="placeholder-box1"></div>
-             <div class="placeholder-box1"></div></div>
-                    <div class="line-two">
-             <div class="placeholder-box1"></div>
-             <div class="placeholder-box1"></div>
-            </div>  
-            </div>
-            <div class="background bg2"></div> 
+    <div class="portfolio_container"></div>
+   </div>
 
-        </div>
-
-        <div id="three" class="section">
-            Experience
-            <a href="#three"></a>
-            <div class="background bg3"></div> 
-        </div>
-
-        <div id="four" class="section">
-            Contact
-            <a href="#four"></a>
-            <div class="background bg4"></div> 
-
-        </div>
-    </div>     
-    
-       <!-- The JavaScript -->
-       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>		
-       <script type="text/javascript" src="jquery.easing.1.3.js"></script>
-       <script type="text/javascript">
-       $(document).ready(function() {
-           $('.nav-menu-li a').click(function(e){
-                e.preventDefault();
-                var target = $($(this).attr('href')); //gets anchor link
-                var scrollTo = target.offset().left;
-                $('div.content').animate({
-                    scrollLeft: scrollTo+'px'
-                }, 1000);
-            });
-        }); //end of jquery
-
-       </script>
+    <script type="text/javascript">
+    </script>
 </body>
+
 </html>
