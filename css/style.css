@@ -12,6 +12,38 @@ body
   font-family: "Futura";
 }
 
+body {
+  display:block;
+}
+
+.section1 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1c1c1c;
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.section2 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #342525;
+  display:flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.section3 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1c1c1c;
+}
+.section4 {
+  width: 100vw;
+  height: 100vh;
+  background-color: #342525;
+}
 ul,li {
   padding: 0;
 }
@@ -117,7 +149,7 @@ a:hover
   align-items: center;
   width: 150px;
   height: 100%;
-  bottom: -15px;
+  bottom: -16px;
   right: 0px;
   padding-bottom: 50px;
   background: #6d416a;
@@ -139,6 +171,25 @@ a:hover
 
 #menuToggle input:checked ~ ul
 {
-  -webkit-transform: none;
           transform: none;
+}
+
+.name-title {
+  padding: 20px;
+  text-align: center;
+}
+
+.about-name {
+  font-size: 60px;
+  padding: 5px;
+}
+
+.about-title {
+  font-size: 20px;
+}
+
+.portfolio-title {
+  font-size: 60px;
+  padding: 5px;
+  text-align: center;
 }
