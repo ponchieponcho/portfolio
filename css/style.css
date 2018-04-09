@@ -21,23 +21,14 @@ body {
   height: 100vh;
   background-color: #1c1c1c;
   display:flex;
-  justify-content: flex-start;
-  align-items: flex-end;
+  flex-direction: column;
+ 
 }
 
 .section2 {
   width: 100vw;
   height: 100vh;
   background-color: #342525;
-  display:flex;
-  justify-content: flex-start;
-  align-items: flex-end;
-}
-
-.section3 {
-  width: 100vw;
-  height: 100vh;
-  background-color: #1c1c1c;
 }
 .section4 {
   width: 100vw;
@@ -152,7 +143,7 @@ a:hover
   bottom: -16px;
   right: 0px;
   padding-bottom: 50px;
-  background: #6d416a;
+  background: #6d416a88;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   
@@ -171,25 +162,96 @@ a:hover
 
 #menuToggle input:checked ~ ul
 {
-          transform: none;
+  transform: none;
 }
 
-.name-title {
-  padding: 20px;
-  text-align: center;
+.picture-container {
+  display:flex;
+  flex-basis: 95%;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  width: 300px;
+  height: 300px;
+  background-image: url("../images/me2.jpg");
+  background-size: contain;
+  border-radius: 50%;
+}
+
+.name-title-section {
+  /* background-color: purple; */
+  flex-basis: 5%;
+  padding: 10px;
+}
+
+.name-title-container {
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: column;
+  min-width: 700px;
+  margin-left: -30px;
 }
 
 .about-name {
-  font-size: 60px;
-  padding: 5px;
+  display:flex;
+  justify-content: center;
+  font-size: 120px;
+  /* background-color: orange; */
 }
 
 .about-title {
-  font-size: 20px;
+  display:flex;
+  justify-content: center;
+  font-size: 40px;
+  /* background-color: mintcream; */
+}
+
+.section3 {
+  width: 100vw;
+  height: 200vh;
+  display:flex;
+  background-color: #1c1c1c;
 }
 
 .portfolio-title {
   font-size: 60px;
-  padding: 5px;
-  text-align: center;
+}
+
+.portfolio-container {
+  height: 100%;
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+}
+
+.portfolio-item {
+  /* background-color: grey; */
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+  display: flex;
+  flex-grow: 1;
+  max-height: 1000px;
+  min-width: 800px;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+}
+
+.portfolio-item-left-container {
+  background-color: grey;
+  flex-basis: 100%;
+}
+
+.portfolio-item-right-container {
+  background-color: #6d416a;
+  flex-basis: 100%;
+
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
 }
