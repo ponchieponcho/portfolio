@@ -9,7 +9,7 @@ body
   padding: 0;
   background: #232323;
   color: #cdcdcd;
-  font-family: "Futura";
+  font-family: "Josefin Sans";
 }
 
 body {
@@ -234,6 +234,7 @@ a:hover
   flex-grow: 1;
   max-height: 1000px;
   min-width: 800px;
+  max-width: 800px;
   flex-wrap: wrap;
   margin-left: auto;
   margin-right: auto;
@@ -246,12 +247,48 @@ a:hover
 }
 
 .portfolio-item-right-container {
-  background-color: #6d416a;
+  /* background-color: #6d416a; */
   flex-basis: 100%;
 
 }
 
 h1 {
   margin: 0;
-  padding: 0;
+  padding: 5px;
+  text-align: center;
+  font-size: 60px;
+}
+
+p {
+  padding:0;
+  margin:0;
+}
+
+.description {
+  padding: 5px;
+}
+
+.item-webstack {
+  border: solid;
+  padding:10px;
+}
+
+ul,li {
+  list-style-type: none;
+}
+
+a {
+  color: white;
+  text-decoration: none; 
+}
+
+.portfolio-item-webstack {
+  display:flex;
+  padding: 5px;
+  justify-content: center;
+}
+
+.github-button {
+  margin-left:auto;
+  margin-right:auto;
 }
