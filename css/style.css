@@ -209,8 +209,8 @@ a:hover
 }
 
 .section3 {
-  width: 100vw;
-  height: 200vh;
+  /* width: 100vw;
+  height: 200vh; */
   display:flex;
   background-color: #1c1c1c;
 }
@@ -239,6 +239,7 @@ a:hover
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
   padding: 20px;
 }
 
