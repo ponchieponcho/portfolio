@@ -326,13 +326,25 @@ a {
 @media screen and (min-width: 1224px) {
   .portfolio-item {
     flex-wrap: nowrap;
-    margin: 0px;
+    margin: 20x;
     max-width: 1500px;
   }
 
   .portfolio-container {
     align-items: center;
-    margin: 20px;
   }
 
+  .section3 {
+    justify-content: space-around;
+  }
+
+  .portfolio-item-right-container {
+    margin-top: 0px;
+  }
+
+  .portfolio-item-left-container {
+    min-width: 0px;
+    min-height: 0px;
+  }
+  
 }
