@@ -17,6 +17,7 @@ let myMap = () => {
         zoomControl: false, 
         scrollwheel: false, 
         disableDoubleClickZoom: true
+
     };
     var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
     }
