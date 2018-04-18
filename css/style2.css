@@ -155,11 +155,11 @@ hr {
 }
 
 .walkme-image {
+  width: 60%;
 }
 
 .portfolio-container1 {
-  height: auto;
-  display:flex;
+  
 }
 
 @media  (min-width: 1200px)  {
