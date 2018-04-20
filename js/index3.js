@@ -19,7 +19,7 @@ let initMap = () => {
       zoomControl: false, 
       scrollwheel: false, 
       disableDoubleClickZoom: true,
-      center: {lat: 33.746, lng: -84.389}
+      center: {lat: 33.746, lng: -84.37}
     });
 
     let marker = new google.maps.Marker({

@@ -222,6 +222,21 @@ hr {
 .margin-top {
   margin-top: 20px;
 }
+
+.contact-content-container {
+  height: 400px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.contact-info-container {
+  background-color: rgb(41, 41, 41, .8);
+  flex-basis: 60%;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 @media screen and (min-width:410px) {
   .name {
     font-size: 5rem;
