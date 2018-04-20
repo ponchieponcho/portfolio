@@ -193,6 +193,7 @@ hr {
   align-self: center;
   font-weight: lighter;
   font-size: 1rem;
+  margin: 5px;
 }
 
 .align-center {
@@ -214,6 +215,13 @@ hr {
   height:400px;
 }
 
+.ts-background {
+ background-color: rgb(41, 41, 41);
+}
+
+.margin-top {
+  margin-top: 20px;
+}
 @media screen and (min-width:410px) {
   .name {
     font-size: 5rem;
