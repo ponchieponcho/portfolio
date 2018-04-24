@@ -237,6 +237,7 @@ hr {
   justify-content: center;
 }
 
+
 @media screen and (min-width:410px) {
   .name {
     font-size: 5rem;
