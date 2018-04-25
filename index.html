@@ -1,115 +1,145 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <title>aaron gross - full stack developer</title>
-      <link rel="stylesheet" href="css/style.css">
-      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
-      <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>aaron gross - full stack developer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.10/js/all.js" integrity="sha384-slN8GvtUJGnv6ca26v8EzVaR9DC58QEwsIk9q1QXdCU8Yu8ck/tL/5szYlBbqmS+"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-<nav role="navigation" class="lower-right">
-  <div id="menuToggle">
-    <input type="checkbox" />
-    <span></span>
-    <span></span>
-    <span></span>
-    <ul id="menu">
-      <a href="#about"><li >about</li></a>
-      <a href="#portfolio"><li>portfolio</li></a>
-      <a href="#contact"><li>contact</li></a>
-    </ul>
-  </div>
-</nav>
+    <nav>
+        <ul class="nav-container">
+            <li class="align-center">
+                <a href="#aboutme">about me</a>
+            </li>
+            <li class="align-center">
+                <a href="#portfolio">portfolio</a>
+            </li>
+            <li class="align-center">
+                <a href="#contact">contact</a>
+            </li>
+            <li class="align-center">
+                <a href="docs/aaron_gross_resume.pdf" target="_blank">resume</a>
+            </li>
 
-<div class="section1">
-  <div class="picture-container animated zoomIn">
-    <div class="picture"></div>
-  </div>
-  <div class="name-title-section">
-    <div class="name-title-container">
-      <div class="about-name">aaron gross</div>
-      <div class="about-title">full stack developer</div>
-  </div>
-  </div>
-</div>
-<div id="about" class="section2">
-  <div class="techstack-container">
-    <div class="techstack-text"></div>
-    <div class="techstack-icons">
-      <i class="devicon-postgresql-plain-wordmark colored icon-size"></i>
-      <i class="devicon-javascript-plain colored icon-size"></i>
-      <i class="devicon-html5-plain-wordmark colored icon-size"></i>
-      <i class="devicon-css3-plain-wordmark colored icon-size"></i>
-      <i class="devicon-nodejs-plain-wordmark colored icon-size"></i>
-      <i class="devicon-python-plain-wordmark colored icon-size"></i>
-      <i class="devicon-amazonwebservices-plain-wordmark colored icon-size"></i>
-      <i class="devicon-github-plain-wordmark icon-size"></i>
-    </div>
-  </div>
-
-</div>
-
-<a class="anchor" id="portfolio"></a>
-<div  class="section3">
-  <div class="portfolio-container">
-    <div class="portfolio-item">
-      <div class="portfolio-item-left-container"></div>
-      <div class="portfolio-item-right-container">
-        <h1>WalkMe</h1><p class="description">My first web application! WalkMe allows 
-        users to browse, create and rate walking tours around the world.</p><br>
-        <ul class="portfolio-item-webstack">
-          <li class="item-webstack">HTML</li>
-          <li class="item-webstack">CSS</li>
-          <li class="item-webstack">Javascript</li>
-          <li class="item-webstack">Node.js</li>
-          <li class="item-webstack">Firebase</li>
-          <li class="item-webstack">Google Maps API</li>
         </ul>
-        <div>
-          <ul class="github-wrapper">
-            <li class="git-icon"></li>
-            <li class="git-text">GitHub</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+    </nav>
 
-    <div class="portfolio-item">
-      <div class="portfolio-item-left-container"></div>
-      <div class="portfolio-item-right-container">
-        <h1>Town Square</h1><p class="description">A video-only online forum. Users can start threads, 
-          reply to threads and record video straight from the app!</p><br>
-        <ul class="portfolio-item-webstack">
-          <li class="item-webstack">HTML</li>
-          <li class="item-webstack">CSS</li>
-          <li class="item-webstack">Javascript</li>
-          <li class="item-webstack">Node.js</li>
-          <li class="item-webstack">Postgres</li>
-          <li class="item-webstack">WebRTC</li>
-          <li class="item-webstack">AWS/EC2</li>
-        </ul>
-        <div>
-          <ul class="github-wrapper">
-            <li class="git-icon"></li>
-            <li class="git-text">GitHub</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    
-  </div>
-</div>
+    <main>
 
-<div id="contact" class="section4"></div>
+        <section id="hero" class="full-height pictureofme">
+            <div class="overlay"></div>
+            <ul class="name-title-container aboveoverlay">
+                <li class="name">aaron gross</li>
+                <li class="title">full-stack web developer</li>
+            </ul>
+        </section>
 
 
-    <script  src="js/index.js"></script>
+        <section id="aboutme">
+            <h3 class="section-title">about me</h3>
+            <div class="container-aboutme">
+                <p class="aboutme-text"> I've always sought out opportunities and challenges that are meaningful to me. Although my professional path
+                    has taken many twists and turns — from creating online seminars for bariatric patients, to building Georgia
+                    Tech’s Online Masters of Computer Science Degree program, to completely switching careers from video
+                    production to coding — I've never stopped engaging my passion to help others and solve problems.</p>
+                <p class="aboutme-text"> As a web developer, I enjoy using my obsessive attention to detail, my unequivocal love for making things,
+                    and my mission-driven work ethic to literally change the world. That's why I’m excited to make a big
+                    impact at a high growth company.</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+            <h3 class="section-title">portfolio</h3>
+            <article class="portfolio" role="article">
+                <div class="info-container">
+
+                    <h2>WalkMe</h2>
+                    <hr>
+                    <p>For my first DigitalCrafts project, I created a single page web app for walking tour enthusiast. Some
+                        of the features you can use in the app are being able to create, view and rate walking routes anywhere
+                        in the world!</p>
+
+                    <ul>
+                        <a class="button on-behance" href="https://github.com/ponchieponcho/walkmeapp" target="_blank">GitHub</a>
+                        <a class="button on-behance" href="https://ponchieponcho.github.io/walkmeapp/" target="_blank">Demo</a>
+                    </ul>
+
+                </div>
+
+                <figure>
+                    <img src="images/walkme_portfolio.png" alt="walkme portfolio">
+                </figure>
+
+            </article>
+
+            <article class="portfolio ts-background" role="article">
+                <div class="info-container">
+
+                    <h2 class="margin-top">Town Square</h2>
+                    <hr>
+                    <p>Town Square is a video-only online forum. During development, I learned how to record video from a user's
+                        camera and send it to a backend server attaching it to a post. It was really cool to figure out!</p>
+
+                    <ul>
+                        <a class="button on-behance" href="https://github.com/ponchieponcho/Town-Square" target="_blank">GitHub</a>
+                        <a class="button on-behance" href="http://ec2-18-188-59-202.us-east-2.compute.amazonaws.com/threads" target="_blank">Demo</a>
+                    </ul>
+
+                </div>
+
+                <figure>
+                    <img src="images/townsquare_portfolio.png" alt="Town-square portfolio">
+                </figure>
+
+            </article>
+
+        </section>
+
+        <section id="contact">
+            <h3 class="section-title">contact</h3>
+            <div class='contact-content-container'>
+                <div id="googleMap"></div>
+                <div class='maps-overlay'></div>
+                <div class='contact-info-container'>
+                    <div class="center-list">
+                        <li>
+                            <span class="fa-stack fa-lg icon-style">
+                                <i class="fas fa-circle fa-stack-2x circle-style"></i>
+                                <i class="fa fa-envelope fa-stack-1x "></i>
+                            </span>
+                            <a href="mailto:aaronhgross@gmail.com">aaronhgross@gmail.com</a>
+                        </li>
+                        <li>
+                            <span class="fa-stack fa-lg icon-style">
+                                <i class="fas fa-circle fa-stack-2x circle-style"></i>
+                                <i class="fab fa-github fa-stack-1x"></i>
+                            </span>
+                            <a href="https://github.com/ponchieponcho">github.com/ponchieponcho</a>
+                        </li>
+                        <li>
+                            <span class="fa-stack fa-lg icon-style">
+                                <i class="fas fa-circle fa-stack-2x circle-style"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </span>
+                            <a href="https://www.linkedin.com/in/aaronhgross/">linkedin.com/in/aaronhgross</a>
+                        </li>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBXNZhn8r9wSEd0feh6tXOn3-ElcPv-nu4"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
