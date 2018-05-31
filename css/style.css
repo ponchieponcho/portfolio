@@ -270,8 +270,9 @@ hr {
 }
 
 #cata {
-  padding-top: 5px;
+  padding-top: 20px;
 }
+
 @media screen and (min-width:410px) {
   .name {
     font-size: 5rem;
